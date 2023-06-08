@@ -1,3 +1,8 @@
+body{
+    background-image: url(https://static-images.vnncdn.net/files/publish/2022/8/25/champions-league-323.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%
+}
 .header{
     
     height:120px;
@@ -98,18 +103,31 @@ animation: fadein ease-in 0.5s;
     top:100%;
     right: 0;
     width: 404px;
-    background-color: var(--white-color);
+    background-color:var(--white-color);
     width: 1px solid #D3D3D3;
+    cursor: default;
+   
+    animation: fadein ease-in 0.5s;
+    display: none;
+
+   
 
 }
+.header__navbar-item--anthongbao:hover .header__noti{
+    display: block;
+}
+
+
 .header__noti-header{
     /* thong bao moi nhan */
     height: 40px;
     background-color: var(--white-color);
-
+   
 
 
 }
+
+
 .header__noti-header h3{
     color:#666;
     margin:0 0 0 12px;
@@ -149,6 +167,7 @@ animation: fadein ease-in 0.5s;
     font-size: 1.4rem;
     color:#666;
     font-weight: 700;
+    line-height: 1.8rem;
     }
 .header__noti-mota{
     display: block;
@@ -157,12 +176,21 @@ animation: fadein ease-in 0.5s;
     color:#756f6e;
     }
     .header__noti-footer{
+        display: flex;
         text-align: center;
+        background-color: var(--white-color);
 
     }
     .header__noti-footer-btn{
 
         text-decoration: none;
         color:var(--text-color);
-        padding: 4px 16px;
+        padding: 8px 16px;
+        margin:auto;
+        font-size: 1.4rem;
+        font-weight: 400;
+        width: 100%;
+        text-align: center;
+
     }
+  
