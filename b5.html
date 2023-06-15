@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 5</title>
+</head>
+
+<body>
+
+</body>
+<script>
+    // khoi tao
+    var danhSachSinhVien = [];
+
+    // ham add sv
+    function addSinhVien() {
+
+        var soLuong = prompt("Nhập số lượng sinh viên: ");
+        var soLuongSinhVien = parseInt(soLuong);
+
+        for (var i = 0; i < soLuongSinhVien; i++) {
+            var hoTen = prompt("Nhập tên: ");
+            var tuoi = prompt("Nhập tuổi : ");
+            var queQuan = prompt("Nhập quê : ");
+
+            //object
+            var sinhVien = {
+                hoTen: hoTen,
+                tuoi: parseInt(tuoi),
+                queQuan: queQuan
+            };
+
+            danhSachSinhVien.push(sinhVien);
+        }
+
+        //trc khi sap xep
+        document.write('Danh sách trước khi sắp xếp: ' + '<br>');
+        for (var i = 0; i < danhSachSinhVien.length; i++) {
+            document.write(
+                'Sinh viên thứ ' + (i + 1) + ' - Tên: ' + danhSachSinhVien[i].hoTen
+                + ' - Tuổi: ' + danhSachSinhVien[i].tuoi
+                + ' - quê quán: ' + danhSachSinhVien[i].queQuan + '<br>')
+        }
+        // sap xep theo tuoi
+        danhSachSinhVien.sort(function (a, b) {
+            return a.tuoi - b.tuoi;
+        });
+
+        // sau khi sap xep
+        document.write('Danh sách sau khi sắp xếp:  ' + '<br>');
+        for (var i = 0; i < danhSachSinhVien.length; i++) {
+            document.write(
+                'Sinh viên thứ ' + (i + 1) + ' - Tên: ' + danhSachSinhVien[i].hoTen
+                + ' - Tuổi: ' + danhSachSinhVien[i].tuoi
+                + ' - quê quán: ' + danhSachSinhVien[i].queQuan + '<br>')
+        }
+    }
+
+    addSinhVien();
+
+</script>
+
+</html>

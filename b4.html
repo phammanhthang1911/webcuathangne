@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 4 </title>
+</head>
+
+<body>
+
+</body>
+<script>
+    let string = prompt('Nhập xâu: ');
+    let New_string = string.trim().split(' ');
+    let arr = '';
+
+    // dem so tu va in hoa chu cai dau
+
+    for (let i = 0; i < New_string.length; i++) {
+        if(New_string[i] !== '') {
+            let Up = New_string[i].charAt(0).toUpperCase() + New_string[i].slice(1);
+            arr += Up + ' ';
+        }
+    }
+    let New_arr = arr.trim().split(' ');
+    console.log(New_arr);
+
+    let Upper = arr.trim();
+    document.write('Xâu vừa nhập: ' + string + '<br>');
+    document.write('Xâu có: ' + New_arr.length + ' từ' + '<br>');
+    document.write('In hoa xâu: ' + Upper);
+
+</script>
+
+</html>

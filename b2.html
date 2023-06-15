@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 2</title>
+</head>
+<body>
+    
+</body>
+<script>
+    function nt(number) {
+        if(number <=1) {
+            return false;
+        }
+
+    for(let i = 2; i < number - 1; i++) {
+        if(number % i === 0) {
+            return false;
+        }
+    }
+    return true;
+    }
+
+    function show() {
+        for(let i = 2; i < 100; i ++) {
+            if(nt(i)) {
+                document.write(i + ' ');
+            }
+        }
+    }
+
+    show();
+</script>
+</html>
