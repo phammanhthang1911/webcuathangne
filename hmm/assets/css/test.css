@@ -1,0 +1,47 @@
+.khuonKiemTra{
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 1000px;
+    background-color: rgba(0, 255, 255, 0.2);
+    border-radius: 1%;
+}
+.cauHoi{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    width: 900px;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 20px;
+    position: relative;
+    margin-bottom: 20px;
+    height: 160px;
+}
+.cauHoiTT{
+    position: absolute;
+    border: 3px solid black;
+    width: 100px;
+    height: 25px;
+    text-align: center;
+    line-height: 25px;
+    font-size: 20px;
+    font-weight: bold;
+    top: 5px;
+    left: 20px;
+}
+.phanCauHoi{
+    position: absolute;
+    border: 1px solid black;
+    right: 5px;
+    top: 5px;
+    width: 750px;
+}
+.phanCauHoi p{
+    margin: 10px 0 10px 30px;
+    font-weight: bold;
+}
+.phanCauHoi input[type="radio"]{
+    margin-bottom: 10px;
+    margin-left: 15px;
+}
