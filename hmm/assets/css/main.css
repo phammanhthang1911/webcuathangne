@@ -12,6 +12,7 @@ body{
 .header__navbar{
     display:flex;
     justify-content: space-between;
+    
 }
 .header__navbar-list{
     padding-left: 0;
@@ -62,7 +63,7 @@ color:rgba(255,255,255,0.7);
     cursor: text;
     color:var(--white-color);
 }
-/* header qr code */
+/* tạo qr code */
 .header__qr{
 background-color: var(--white-color);
 width: 186px;
@@ -96,7 +97,7 @@ animation: fadein ease-in 0.5s;
 
 
 }
-/* header noti */
+/* heder_noti tạo thanh thông báo */
 .header__noti{
     
     position: absolute;
@@ -193,4 +194,8 @@ animation: fadein ease-in 0.5s;
         text-align: center;
 
     }
+
+
+
+    /* dựng khung tìm kiếm */
   
