@@ -199,7 +199,10 @@ animation: fadein ease-in 0.5s;
         text-align: center;
 
     }
-
+.header__navbar-item a{
+    color: #ffffff;
+    text-decoration: none;
+}
 
 
     /* dựng khung tìm kiếm */
