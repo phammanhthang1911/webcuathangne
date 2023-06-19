@@ -1,0 +1,28 @@
+body{
+    width: 100%;
+    height: 100vh;
+    background-image: url(https://suachualaptop24h.com/upload_images/images/2021/05/02/2561184c0d83292e2814a8db5dfe49e1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.khuonKiemTra{
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 1000px;
+    background-color: rgba(0, 255, 255, 0.2);
+    border-radius: 1%;
+}
+.quayve{
+    position:fixed;
+    left:15px;
+    width:70px;
+    height:30px;
+    color:black;
+    background-color: blue;
+  
+    text-align: center;
+    border-radius: 5px;
+
+}

@@ -79,14 +79,7 @@
         background-color: #1926248d;}
 
         /* wrap layout  */
-        .wrap-layout{
-            background-color:#fff ;
-            margin-top : 36px;
-            padding:12px 0 32px 0;
-            display:flex;
-            justify-content : space-around;
-            flex-wrap:wrap;
-        }
+    
         .wrap-layout__item{
             width:148px;
             height :90px;
