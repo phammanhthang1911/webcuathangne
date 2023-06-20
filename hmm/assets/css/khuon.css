@@ -1,0 +1,33 @@
+.giaoDienCauHoi{
+    position: fixed;
+    background-color: rgba(255, 255, 255, 0.4);
+    width: 75%;
+    height: 100%;
+    left: 25%;
+    top: 120px;
+    margin: 0;
+    z-index: 1;
+    text-align: center;
+    
+}
+.giaoDienCauHoi a{
+    text-decoration: none;
+}
+.giaodien{
+    background-color: rgb(214, 248, 248);
+    height: 250px;
+    width: 400px;
+    top: 20px;
+    left: 30px;
+    display: inline-block;
+    margin-top: 40px;
+    margin-left: 50px;
+}
+.giaodien img{
+    height: 200px;
+    width: 400px;
+}
+.giaodien p{
+    margin: 0;
+    color: black; 
+}
