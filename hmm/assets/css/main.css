@@ -5,6 +5,8 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
     
+    background-size: 100%;
+    margin: 0;
 }
 .header{
     position: fixed !important;
@@ -13,7 +15,6 @@ body{
     height:120px;
     width: 100%;
     background-image:linear-gradient(0,#fe6433,#f53e2d);
-    
     
 }
 .header__navbar{
