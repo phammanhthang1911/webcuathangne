@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 4 Tuần 5 Nguyễn Hữu Thắng</title>
+    <style>
+        #content{
+            background-color: rgb(186, 186, 186);
+            border: 1px solid black;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Ẩn và hiện thẻ div bằng Javascript</h1>
+    <div id="content">Nội dung thẻ div: Chào mừng đến với Khoa Công nghệ Thông tin - Đại học Sư phạm Hà Nội</div>
+    <br>
+    <input type="button" id="hide" value="Ẩn">
+    <input type="button" id="show" value="Hiển thị">
+    <script>
+        document.getElementById("hide").onclick = function(){
+            document.getElementById("content").style.display = 'none';
+        }
+        document.getElementById("show").onclick = function(){
+            document.getElementById("content").style.display = 'block';
+        }
+    </script>
+</body>
+</html>

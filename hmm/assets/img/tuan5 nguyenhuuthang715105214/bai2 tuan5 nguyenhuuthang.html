@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 2 Tuần 5 Nguyễn Hữu Thắng</title>
+</head>
+<body>
+    <h1>Thay đổi nội dung của thẻ html</h1>
+    <div id="content" style="padding: 20px; background: rgb(31, 242, 27); color: white; margin: 40px 0px;">
+        Nội dung ban đầu
+    </div>
+    <input type="button" id="but1" value="Xem nội dung 1">
+    <input type="button" id="but2" value="Xem nội dung 2">
+    <script>
+        var button1 = document.getElementById("but1");
+        var button2 = document.getElementById("but2");
+        var div = document.getElementById('content');
+
+        button1.onclick = function(){
+            div.innerHTML = "Chào mừng bạn đến với";
+        }
+        button2.onclick = function(){
+            div.innerHTML = "Trường Đại học Sư phạm Hà Nội";
+        }
+    </script>
+</body>
+</html>

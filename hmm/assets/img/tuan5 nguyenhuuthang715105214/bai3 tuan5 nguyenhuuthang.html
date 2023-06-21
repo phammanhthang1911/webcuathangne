@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 3 Tuần 5 Nguyễn Hữu Thắng</title>
+    <style>
+        #image{
+            width: 35%;
+            display: flex;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        button{
+            display: flex;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1 align="center">Bật tắt bóng đèn</h1>
+    <div>
+        <img src="light_off.png" alt="tắt" id="image">
+    </div>
+    <button id="turn" onclick="change()" style="background-color: blue; color: white;">
+        Bật đèn
+    </button>
+    <script>
+        function change(){
+            var bulb = document.getElementById('image');
+            var button = document.getElementById('turn');
+            if(bulb.src.match("light_off")){
+                bulb.src = "light_on.png";
+                button.innerHTML = "Tắt đèn";
+                changeBut(0);
+            }else{
+                bulb.src = "light_off.png";
+                button.innerHTML = "Bật đèn";
+                changeBut(1);
+            }
+        }
+        function changeBut(a){
+            if(a == 1){
+                document.getElementById("turn").style.background = 'blue';
+                document.getElementById("turn").style.color = 'white';
+            }
+            else{
+                document.getElementById("turn").style.background = 'orange';
+                document.getElementById("turn").style.color = 'white';
+            }
+        }
+    </script>
+</body>
+</html>

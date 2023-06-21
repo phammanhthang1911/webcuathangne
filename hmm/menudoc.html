@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            font-size: 30px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            margin: 0;
+        }
+        li{
+            list-style: none;
+        }
+        .khuon{
+            position: fixed;
+            width: 253px;
+            height: 100%;
+            background-color: lightgray;
+        }
+        .menu{
+            position: absolute;
+            padding: 0;
+        }
+        .menu.cap1{
+            display: flex;
+            flex-direction: column;
+        }
+        .menu.cap1 > li{
+            padding: 10px 50px;
+            background-color: lightgray;
+            border-bottom: 2px solid white;
+        }
+        .menu.cap1 > li:hover{
+            background-color: #212121;
+            color: white;
+        }
+        .menu.cap1 > li:nth-child(2):hover{
+            height: 317px;
+        }
+        .menu.cap2{
+            display: none;
+        }
+        .menu.cap1 > li:nth-child(2):hover .menu.cap2{
+            display: flex;
+            flex-direction: column;
+            left: 0px;
+            top: 115px;
+        }
+        .menu.cap1 > li:nth-child(2):hover .menu.cap2 > li{
+            padding: 10px 53px 10px 85px;
+            background-color: lightgray;
+            border-bottom: 2px solid white;
+            color: black;
+        }
+        .menu.cap1 > li:nth-child(2):hover .menu.cap2 > li:hover{
+            background-color: #212121;
+            color: white;
+            border-bottom: 2px solid white;
+            border-left: 2px solid red;
+            padding-left: 83px;
+        }
+        .menu.cap3{
+            display: none;
+        }
+        .menu.cap2 > li:hover .menu.cap3{
+            display: flex;
+            flex-direction: column;
+            left: 255px;
+            top: 168px;
+        }
+        .menu.cap2 > li:hover .menu.cap3 > li{
+            padding: 10px 50px 10px 43px;
+            background-color: lightgray;
+            border-bottom: 2px solid white;
+            border-left: 2px solid red;
+            color: black;
+        }
+        .menu.cap2 > li:hover .menu.cap3 > li:hover{
+            background-color: #212121;
+            color: white;
+            border-bottom: 2px solid white;
+            border-left: 2px solid red;
+        }
+    </style>
+</head>
+<body>
+    <div class="khuon">
+        <ul class="menu cap1">
+            <li>Home</li>
+            <li>Product
+                <ul class="menu cap2">
+                    <li>Group 1</li>
+                    <li>Group 2</li>
+                    <li>Group 3</li>
+                    <li>Group 4
+                        <ul class="menu cap3">
+                            <li>Click1</li>
+                            <li>Click2</li>
+                            <li>Click3</li>
+                        </ul>
+                    </li>
+                    <li>Group 5</li>
+                </ul>
+            </li>
+            <li>Contact</li>
+            <li>Infomation</li>
+        </ul>
+    </div>
+</body>
+</html>

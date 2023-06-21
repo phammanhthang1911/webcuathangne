@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 5 Tuần 5 Nguyễn Hữu Thắng</title>
+    <style>
+        .container{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        #div1{
+            float: left;
+            width: 50px;
+            font-size: large;
+        }
+        #count{
+            float: left;
+            width: 50px;
+            color: red;
+            font-size: large;
+        }
+        textarea{
+            display: flex;
+            margin-left: 430px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="div1">Số từ: </div>
+        <div id="count">0</div>
+    </div>
+    <textarea name="" id="text" cols="40" rows="5" placeholder="Mời bạn nhập" onkeyup="countWords()"></textarea>
+    <script>
+        function countWords(){
+            var s = document.getElementById("text").value;
+            var div = document.getElementById("count");
+            // Loại bỏ khoảng trắng ở đầu và cuối dãy:
+            s = s.replace(/(^\s*)|(\s*$)/gi,"");
+            // Chuyển 2 hoặc nhiều dấu space thành 1 dấu space:
+            s = s.replace(/[ ]{2,}/gi," ");
+            // Loại bỏ xuống dòng đầu đoạn:
+            s = s.replace(/\n /,"\n");
+            div.innerHTML = s.split(' ').length;
+        }
+
+    </script>
+</body>
+</html>
