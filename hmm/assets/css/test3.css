@@ -14,15 +14,3 @@ body{
     background-color: rgba(0, 255, 255, 0.2);
     border-radius: 1%;
 }
-.quayve{
-    position:fixed;
-    left:15px;
-    width:70px;
-    height:30px;
-    color:black;
-    background-color: rgb(0, 255, 68);
-  
-    text-align: center;
-    border-radius: 5px;
-
-}

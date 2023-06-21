@@ -5,7 +5,7 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
     
-    background-size: 100%;
+    /* background-size: 100%; */
     margin: 0;
 }
 .header{
@@ -15,6 +15,7 @@ body{
     height:120px;
     width: 100%;
     background-image:linear-gradient(0,#fe6433,#f53e2d);
+    z-index: 3;
     
 }
 .header__navbar{
@@ -123,7 +124,6 @@ animation: fadein ease-in 0.5s;
     animation: fadein ease-in 0.5s;
     display: none;
 
-   
 
 }
 .header__navbar-item--anthongbao:hover .header__noti{
@@ -212,7 +212,11 @@ animation: fadein ease-in 0.5s;
 }
 
 
-    /* dựng menu doc*/
+    
+
+
+
+/* dựng menu doc*/
     
     *{
         margin: 0;
@@ -227,10 +231,11 @@ animation: fadein ease-in 0.5s;
         position: fixed;
        margin-top: 120px; 
         width: 200px;
-        height: 625px;
+        height: 100%;
         /* margin: auto 0; */
         list-style: none;
         background-color: #295bc7;
+        z-index: 2;
      }
      /* .menu-cap3  > li {} */
      .menu-cap3 > li a {

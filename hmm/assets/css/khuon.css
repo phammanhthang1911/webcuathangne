@@ -1,9 +1,9 @@
 .giaoDienCauHoi{
     position: fixed;
     background-color: rgba(255, 255, 255, 0.4);
-    width: 75%;
+    width: 100%;
     height: 100%;
-    left: 25%;
+    left:0;
     top: 120px;
     margin: 0;
     z-index: 1;
@@ -20,8 +20,8 @@
     top: 20px;
     left: 30px;
     display: inline-block;
-    margin-top: 40px;
-    margin-left: 50px;
+    margin-top: 350px;
+    margin-right:770px;
 }
 .giaodien img{
     height: 200px;
