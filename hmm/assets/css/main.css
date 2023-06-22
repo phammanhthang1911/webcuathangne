@@ -267,6 +267,39 @@ animation: fadein ease-in 0.5s;
         left: 100%;
      }
 
-     /* tao khoa hoc */
+     /* tao footer */
+     .content {
+        /* Khoảng cách giữa nội dung và chân trang */
+        margin-bottom: 100px;
+      }
+      
+      .footer {
+       
+        position: fixed; /* Đặt chân trang ở vị trí cố định */
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        
+       padding: 20px;
+        text-align: center;
+        display:flex;
+       
+        justify-content:space-around;
+        z-index: 2;
+        background-image:linear-gradient(0,#fe6433,#f53e2d);
+      }
+      
+      .footer p {
+        margin: 0;
+      }
+      
+      .footer a {
+        color: #333;
+        text-decoration: none;
+      }
+      
+      .footer a:hover {
+        text-decoration: underline;
+      }
    
     
